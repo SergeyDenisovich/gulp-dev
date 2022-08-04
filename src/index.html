@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.html',{ "title":"Адаптивный дизайн" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.html',{})
+      <main class="page _container">
+        <h1 class="page__title">Отопительное оборудование</h1>
+        <div class="content">
+          <section class="page__filters filters-block">
+            <div class="filters-block__top">
+              <span>Фильтры</span>
+              <span class="filters-block__top-reset">Сбросить</span>
+            </div>
+
+            <form class="filters-block__filters">
+              <div class="filter-section">
+                <div class="filter-section__title">Отопительное оборудование</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Радиаторы отопления</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Конвекторы отопления</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Полотенцесушители</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Арматура для радиаторов </span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-section__title">Бренд</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Purmo</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Irsap</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Terma</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Loten</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Guardo</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-section-price">
+                <div class="filter-section-price__inner">
+                  <div class="filter-section-price__title">Цена</div>
+                  <div id="range" data-from="3000" data-to="40000"></div>
+                </div>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-section__title">Количество секций</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>4</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>6</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>8</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>12</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-section__title">Межосетевое расстояние</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>20 см</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>35 см</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>50 см</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-section__title">Площадь отопления</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Более 19 м²</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>Менее 8 м²</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>от 10 до 14 м²</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox__input" />
+                      <span class="checkbox__text">
+                        <span>от 15 до 26 м²</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-section__title">Цвет</div>
+                <ul class="filter-section__items">
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="red">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Красный</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="yellow">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Желтый</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="green">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Зеленый</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="blue">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Синий</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="violet">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Фиолетовый</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="pink">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Розовый</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="beige">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Бежевый</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="white">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Белый</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="black">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Черный</span>
+                      </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-section__item">
+                    <label class="checkbox-color" data-color="gray">
+                      <input type="checkbox" class="checkbox-color__input" />
+                      <span class="checkbox-color__text">
+                        <span>Серый</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </section>
+          <section class="page__main">
+            <div class="page__main-top top-main">
+              <div class="top-main__content content-main">
+                <div class="content-main__total-items">
+                  <span>2394</span>
+                  <span>товаров</span>
+                </div>
+                <div class="content-main__select">
+                  <span>Цена:</span>
+                  <select>
+                    <option value="asc">
+                      <b>По возрастанию</b>
+                    </option>
+                    <option value="desc">
+                      <b>По убыванию</b>
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="page__main-items items-main">
+              <div class="items-main__item item-main">
+                <a href="#" class="item-main-_image-block _ibg">
+                  <img src="./img/products/r-1.jpg" alt="Радиатор" />
+                </a>
+              </div>
+              <div class="items-main__item"></div>
+              <div class="items-main__item"></div>
+
+              <div class="items-main__item"></div>
+              <div class="items-main__item"></div>
+              <div class="items-main__item"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @@include('html/_footer.html',{})
+    </div>
+
+    @@include('html/_js.html', {})
+  </body>
+</html>
+<!-- <button class="btn">Click</button>
+        <div class="block1"></div>
+
+        <br /><br /><br /><br />
+
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" />
+          <span class="checkbox__text">
+            <span>Text 1</span>
+          </span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" />
+          <span class="checkbox__text">
+            <span>Text 1</span>
+          </span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" class="checkbox__input" />
+          <span class="checkbox__text">
+            <span>Text 1</span>
+          </span>
+        </label>
+
+        <br /><br /><br /><br /> -->
